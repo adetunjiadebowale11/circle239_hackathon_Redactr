@@ -25,7 +25,7 @@ function startApp() {
     return Separated;
 }
 console.log(ToBeSeparated( ))
-// Boluwatife Morenikeji
+// Boluwatife Moronkeji
   function redactNow(text, toBeScrambled, rePlacer) {
     let wordScanned = text.split(" ").length
     let newText = text;
