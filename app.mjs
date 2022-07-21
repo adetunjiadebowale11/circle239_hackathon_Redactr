@@ -1,3 +1,8 @@
+import { getString, getValue } from "./helperFunction.mjs";
+
+
+
+
 function startApp() {
     // Your entire app should not necessarily be coded inside this 
     // single function (though there's no penalty for that), 
@@ -5,7 +10,7 @@ function startApp() {
   
     // pls remove the below and make some magic in here!
     console.log('make magic in here!');
-  
+    getString('david');
     const header = document.querySelector('h2');
     if(header) {
       header.textContent = 'make some magic here!!';
