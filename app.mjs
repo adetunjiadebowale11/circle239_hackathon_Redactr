@@ -1,3 +1,7 @@
+import { redactNow } from "./helper.mjs";
+
+
+
 function startApp() {
     // Your entire app should not necessarily be coded inside this 
     // single function (though there's no penalty for that), 
@@ -10,8 +14,10 @@ function startApp() {
     if(header) {
       header.textContent = 'make some magic here!!';
     }
-  };
-  
+  }
+
+
+
   // ======= DO NOT EDIT ============== //
   export default startApp;
   // ======= EEND DO NOT EDIT ========= //
