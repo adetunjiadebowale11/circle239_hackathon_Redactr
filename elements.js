@@ -1,5 +1,5 @@
-const content = document.querySelector('input[placeholder="Enter word to scramble"]');
-const scramble = document.querySelector('input').innerText;
+const content = document.querySelector('#content');
+const scramble = document.querySelector('#word').value;
 const button = document.querySelector('button');
 
 
