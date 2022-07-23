@@ -17,7 +17,4 @@ function toBeSeperated(words) {
   }
 
 
-module.exports = {
-    redactNow,
-    toBeSeperated, 
-}
+export default redactNow
