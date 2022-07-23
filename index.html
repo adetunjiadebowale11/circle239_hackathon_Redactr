@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Name of chosen challenge</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h2>make some magic hereee!!</h2>
-  <form method="GET">
-    
-  </form>
+    <form method="GET">
+      <select size="5" name="words-to-scramble" id="words-to-scramble">
+        <option value="Javascript">Javascript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+        <option value="Cascade">Cascade</option>
+        <option value="System">Style-Sheet</option>
+        <option value="Java">Programming</option>
+        <option value="Cascade">Operating</option></select
+      ><br />
+
+      <input type="text" placeholder="Enter word to scramble" required /><br />
+      <label for="word-scrambled">Result:</label>
+      <input
+        id="word-scrambled"
+        type="text"
+        value="word scrambled"
+        readonly
+      /><br />
+      <button onclick="redactNow()" type="submit">Redact now</button>
+    </form>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
+  </body>
 </html>
