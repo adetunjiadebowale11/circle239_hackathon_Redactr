@@ -13,17 +13,11 @@
     <div class="container">
 
       <form method="GET">
-        <select size="1" name="words-to-scramble" id="words-to-scramble">
-          <option value="Javascript">Javascript</option>
-          <option value="Python">Python</option>
-          <option value="Java">Java</option>
-          <option value="Cascade">Cascade</option>
-          <option value="System">Style-Sheet</option>
-          <option value="Java">Programming</option>
-          <option value="Cascade">Operating</option></select
-        >
   
-        <input type="text" placeholder="Enter word to scramble" required /><br />
+        <input type="text" placeholder="Enter the body of text to be scrambled" required /> <br />
+  
+        <input type="text" placeholder="Enter words to scramble" required /><br />
+        <button onclick="redactNow()" type="submit">Redact Now</button>
         <label for="word-scrambled">Result:</label>
         <input
           id="word-scrambled"
@@ -31,7 +25,6 @@
           value="word scrambled"
           readonly
         /><br />
-        <button onclick="redactNow()" type="submit">Redact Now</button>
       </form>
     </div>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
