@@ -1,1 +1,45 @@
-/* Style tasks assigned to Benjamin */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    overflow-x: hidden;
+}
+
+input[type=text],  select{
+
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+button[type=submit] {
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #011f26;
+    color: #F0810F;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=submit]:hover{
+   opacity: 0.8;
+}
+
+.container{
+    width: 30%;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 5px;
+    padding-top: 80px;
+}
+
