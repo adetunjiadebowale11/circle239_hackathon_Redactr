@@ -6,6 +6,7 @@ const wordsScanned = document.querySelector(".words-scanned");
 const numWordsScrambled = document.querySelector(".num-words-scrambled");
 const numCharsScrambled = document.querySelector(".num-chars-scrambled");
 const time = document.querySelector(".time");
+const replacer = document.querySelector("#replacer");
 
 export {
     content,
@@ -16,4 +17,5 @@ export {
     numWordsScrambled,
     numCharsScrambled,
     time,
+    replacer,
 }

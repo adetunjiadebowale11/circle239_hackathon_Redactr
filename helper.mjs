@@ -1,5 +1,5 @@
 //Boluwatife Moronkeji
-function redactNow(text, toBeScrambled, rePlacer) {
+function redactNow(text, toBeScrambled, rePlacer = '***') {
     const start = performance.now()
     let wordScanned = text.split(" ").length
     let newText = text;

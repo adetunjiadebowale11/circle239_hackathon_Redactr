@@ -1,9 +1,9 @@
 import redactNow from "../helper.mjs";
-import {content, scramble, button, wordScrambled, wordsScanned, numWordsScrambled, numCharsScrambled, time} from '../elements.mjs'
+import {content, scramble, button, wordScrambled, wordsScanned, numWordsScrambled, numCharsScrambled, time, replacer} from '../elements.mjs'
 
 button.addEventListener('click', (e) => {
     e.preventDefault()
-    let result = redactNow(content.value, scramble.value, '***')
+    let result = redactNow(content.value, scramble.value, replacer.value)
     wordScrambled.value = result.Result
     wordsScanned.innerText = `Words scanned: ${result.numberOfWordsScanned}`;
     numWordsScrambled.innerText = `Number of words scrambled: ${result.numberOfWordsScrambled}`;
