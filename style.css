@@ -90,7 +90,12 @@ header {
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
     }
+  }
 
+  .words-scanned {
+    margin: 1.5rem 0;
+  }
 
-
-  
+  .words-scanned ~ p {
+    margin-bottom: 1.5rem;
+  }
