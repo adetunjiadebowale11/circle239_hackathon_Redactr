@@ -7,7 +7,7 @@ function redactNow(text, toBeScrambled, rePlacer) {
     const redactArray = toBeScrambled.split(" ")
     let numOfCharsScrambled = 0
     for (let i = 0; i < redactArray.length; i++) {
-      numberOfMatches = newText.toLowerCase().split(redactArray[i].toLowerCase()).length - 1
+     let numberOfMatches = newText.toLowerCase().split(redactArray[i].toLowerCase()).length - 1
       const lengthOfMatch = redactArray[i].length * numberOfMatches;
       numMatchedWordsScrambled += numberOfMatches;
       numOfCharsScrambled += lengthOfMatch;
