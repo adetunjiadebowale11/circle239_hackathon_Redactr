@@ -1,14 +1,18 @@
 //Boluwatife Moronkeji
-function redactNow(text, toBeScrambled, rePlacer = '***') {
+function redactNow(text, toBeScrambled, rePlacer) {
     const start = performance.now()
     let wordScanned = text.split(" ").length
     let newText = text;
     let numMatchedWordsScrambled = 0
     const redactArray = toBeScrambled.split(" ")
-    const numOfCharsScrambled = redactArray.join('').length
+    let numOfCharsScrambled = 0
     for (let i = 0; i < redactArray.length; i++) {
-      numMatchedWordsScrambled += newText.split(redactArray[i]).length - 1
-      newText = newText.replaceAll(redactArray[i], rePlacer ?   rePlacer : "***")    
+      numberOfMatches = newText.toLowerCase().split(redactArray[i].toLowerCase()).length - 1
+      const lengthOfMatch = redactArray[i].length * numberOfMatches;
+      numMatchedWordsScrambled += numberOfMatches;
+      numOfCharsScrambled += lengthOfMatch;
+      const currentMatch = new RegExp(`(${redactArray[i]})`, 'gi')
+      newText = newText.replaceAll(currentMatch, rePlacer ?   rePlacer : "***")    
     }
 
     const end = performance.now()
@@ -22,6 +26,7 @@ function redactNow(text, toBeScrambled, rePlacer = '***') {
       time,
     }
   }
+
 
 
 //adesola busari
